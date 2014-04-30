@@ -1,0 +1,119 @@
+
+@charset "UTF-8";
+
+/*expand on html using css - include img, ul, li, & ol - try to create a side bar*/
+
+/* not real sure what box-sizing is - follow up on this
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*/
+
+body {  
+	background: #669;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-top: 100px;
+}
+
+h1 {
+	color: #669;
+	display: inline-block;
+	float: left;
+	font-weight: normal;
+	margin: 10 0 0 0;
+	padding: 0;
+}
+ h2 {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+/* attempting a fixed header*/
+.navbar {
+	background-color: #000;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+}
+
+/* my content of the navbar*/
+.navbar .nav {
+	margin:0 auto 0 auto;
+	padding: 0;
+	width: 60%;
+}
+
+.navbar .nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar .nav ul li{
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar .nav ul li a{
+	background-color: #666;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: black;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:active {
+	background-color: #669;
+	color: white;
+}
+
+
+/* main content */
+.content {
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 0 auto 40px; 
+	max-width: 960px;
+	padding: 20px;
+
+}
+
+.content img {
+	float: right;
+	margin: 1em;
+	min-width: 10%;
+    width: 20%;
+}
+
+
+/* will try responsive - media query  
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+*/
